@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Niharika Gurugubelli — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Click Ripple Container -->
+  <div id="rippleContainer"></div>
+
+  <!-- Floating Particles -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">NG<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certs</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">NIHARIKA</div>
+    <div class="hero-content">
+      <p class="hero-greeting reveal-up">Hello, I'm</p>
+      <h1 class="hero-name reveal-up delay-1">Niharika<br/><span class="name-accent">Gurugubelli</span></h1>
+      <div class="hero-roles reveal-up delay-2">
+        <span class="role-static">I am a </span>
+        <span class="typewriter" id="typewriter"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc reveal-up delay-3">
+        Final-year BCA student crafting pixel-perfect interfaces and interactive web experiences from Srikakulam, Andhra Pradesh.
+      </p>
+      <div class="hero-cta reveal-up delay-4">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-ghost">Hire Me</a>
+      </div>
+      <div class="hero-scroll reveal-up delay-5">
+        <div class="scroll-indicator">
+          <div class="scroll-dot"></div>
+        </div>
+        <span>Scroll Down</span>
+      </div>
+    </div>
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-label">01 / About</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="about-img-wrap tilt-card">
+          <div class="about-img-inner">
+            <div class="about-avatar">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#7c3aed"/>
+                    <stop offset="100%" style="stop-color:#06b6d4"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="100" cy="100" r="100" fill="url(#avatarGrad)" opacity="0.15"/>
+                <circle cx="100" cy="80" r="35" fill="url(#avatarGrad)" opacity="0.6"/>
+                <ellipse cx="100" cy="160" rx="55" ry="40" fill="url(#avatarGrad)" opacity="0.5"/>
+                <text x="50%" y="50%" text-anchor="middle" dy="0.35em" font-size="60" font-family="Syne" fill="url(#avatarGrad)" font-weight="800">NG</text>
+              </svg>
+            </div>
+            <div class="about-badge badge-1">UI/UX & Frontend</div>
+            <div class="about-badge badge-2">Prompt Engineering</div>
+            <div class="about-badge badge-3">Excel with AI & Power BI</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <h2 class="section-title scroll-reveal">Who <em>am</em> I?</h2>
+        <p class="about-text scroll-reveal">
+          I'm a <strong>BCA student</strong> at Kakunda Aditya Women's Degree College, Srikakulam, with a passion for designing beautiful and functional digital experiences.
+        </p>
+        <p class="about-text scroll-reveal">
+          I bridge the gap between <strong>design and development</strong> — I think in wireframes, speak in code, and obsess over pixel perfection. From Figma mockups to production-ready HTML/CSS/JS, I do it all.
+        </p>
+        <div class="about-stats scroll-reveal">
+          <div class="stat">
+            <span class="stat-num" data-target="6">0</span><span>+</span>
+            <p>Certifications</p>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="2">0</span><span>+</span>
+            <p>Projects Built</p>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="1">0</span><span></span>
+            <p>Hackathon</p>
+          </div>
+        </div>
+        <div class="about-details scroll-reveal">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <span>Srikakulam, Andhra Pradesh</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">🎓</span>
+            <span>Bachelor of Computer Applications (2024–2027)</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✉️</span>
+            <span>niharikagurugubelli86@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-label">02 / Skills</div>
+    <h2 class="section-title centered scroll-reveal">What I <em>Bring</em></h2>
+    <div class="skills-grid">
+
+      <div class="skill-card tilt-card scroll-reveal" style="--card-color: #7c3aed;">
+        <div class="skill-card-icon">🎨</div>
+        <h3>UI/UX & Design</h3>
+        <div class="skill-tags">
+          <span>Figma</span>
+          <span>Wireframing</span>
+          <span>Prototyping</span>
+          <span>Component Design</span>
+          <span>Graphic Design</span>
+        </div>
+        <div class="skill-glow"></div>
+      </div>
+
+      <div class="skill-card tilt-card scroll-reveal" style="--card-color: #06b6d4;">
+        <div class="skill-card-icon">💻</div>
+        <h3>Frontend Dev</h3>
+        <div class="skill-tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+          <span>VS Code</span>
+        </div>
+        <div class="skill-glow"></div>
+      </div>
+
+      <div class="skill-card tilt-card scroll-reveal" style="--card-color: #10b981;">
+        <div class="skill-card-icon">📊</div>
+        <h3>Data & Analytics</h3>
+        <div class="skill-tags">
+          <span>Power BI</span>
+          <span>Data Viz</span>
+          <span>Excel + AI</span>
+          <span>Pivot Tables</span>
+        </div>
+        <div class="skill-glow"></div>
+      </div>
+
+      <div class="skill-card tilt-card scroll-reveal" style="--card-color: #ec4899;">
+        <div class="skill-card-icon">⌨️</div>
+        <h3>Programming</h3>
+        <div class="skill-tags">
+          <span>C Language</span>
+          <span>Java (OOP)</span>
+          <span>SQL</span>
+          <span>Prompt Engineering</span>
+        </div>
+        <div class="skill-glow"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-label">03 / Projects</div>
+    <h2 class="section-title scroll-reveal">Things I've <em>Built</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card tilt-card scroll-reveal">
+        <div class="project-top">
+          <div class="project-number">01</div>
+          <div class="project-links">
+            <span class="project-link-icon">↗</span>
+          </div>
+        </div>
+        <div class="project-tech-bar">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>2025</span>
+        </div>
+        <h3 class="project-title">Personal Portfolio Website</h3>
+        <ul class="project-desc">
+          <li>Built a 5+ section responsive portfolio from scratch — no frameworks, no templates.</li>
+          <li>Mobile-first CSS with custom breakpoints — consistent rendering across all devices.</li>
+          <li>Showcased projects with dedicated cards demonstrating end-to-end UI presentation.</li>
+        </ul>
+        <div class="project-footer">
+          <div class="project-dot"></div>
+          <span>Responsive · Mobile-first</span>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card scroll-reveal">
+        <div class="project-top">
+          <div class="project-number">02</div>
+          <div class="project-links">
+            <span class="project-link-icon">↗</span>
+          </div>
+        </div>
+        <div class="project-tech-bar">
+          <span>Vanilla JS</span><span>HTML5</span><span>CSS3</span><span>2026</span>
+        </div>
+        <h3 class="project-title">Browser Calculator</h3>
+        <ul class="project-desc">
+          <li>Built a fully functional browser calculator across index.html, script.js, and style.css — zero external libraries.</li>
+          <li>Handles chained operations, operator precedence, and edge cases like divide-by-zero gracefully.</li>
+          <li>Clean, responsive UI with real-time display updates using pure DOM manipulation.</li>
+        </ul>
+        <div class="project-footer">
+          <div class="project-dot"></div>
+          <span>Calculator · DOM Mastery</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="certs" id="certifications">
+    <div class="section-label">04 / Certifications</div>
+    <h2 class="section-title centered scroll-reveal">My <em>Credentials</em></h2>
+    <div class="certs-grid">
+
+      <div class="cert-card scroll-reveal">
+        <div class="cert-icon">📊</div>
+        <div class="cert-info"><h4>Power BI for Beginners</h4><p>Simplilearn</p></div>
+        <div class="cert-badge">Verified</div>
+      </div>
+
+      <div class="cert-card scroll-reveal">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-info"><h4>AIML</h4><p>ULEARN</p></div>
+        <div class="cert-badge">Verified</div>
+      </div>
+
+      <div class="cert-card scroll-reveal">
+        <div class="cert-icon">📊</div>
+        <div class="cert-info"><h4>Data Analyst 101</h4><p>Simplilearn</p></div>
+        <div class="cert-badge">Verified</div>
+      </div>
+
+      <div class="cert-card scroll-reveal">
+        <div class="cert-icon">📊</div>
+        <div class="cert-info"><h4>Business Analytics with Excel</h4><p>Simplilearn</p></div>
+        <div class="cert-badge">Verified</div>
+      </div>
+
+      <div class="cert-card scroll-reveal">
+        <div class="cert-icon">🗣️</div>
+        <div class="cert-info"><h4>English Speaking (MePro)</h4><p>Pearson</p></div>
+        <div class="cert-badge">Verified</div>
+      </div>
+
+      <div class="cert-card scroll-reveal">
+        <div class="cert-icon">🤖</div>
+        <div class="cert-info"><h4>Prompt Engineering</h4><p>Great Learning Academy</p></div>
+        <div class="cert-badge">Verified</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="achievements" id="achievements">
+    <div class="section-label">05 / Achievements</div>
+    <h2 class="section-title centered scroll-reveal">Things I'm <em>Proud Of</em></h2>
+    <div class="achievements-list">
+      <div class="achievement-item scroll-reveal">
+        <span class="ach-icon">🏆</span>
+        <p>Participated in college-level <strong>Hackathon</strong> — contributed to UI design and frontend implementation under time constraints.</p>
+      </div>
+      <div class="achievement-item scroll-reveal">
+        <span class="ach-icon">📜</span>
+        <p>Completed <strong>6+ professional certifications</strong> across UI/UX design, English communication, Excel with AI, Data Analytics, Power BI, and Prompt Engineering — independently.</p>
+      </div>
+      <div class="achievement-item scroll-reveal">
+        <span class="ach-icon">💡</span>
+        <p>Self-taught frontend developer — built <strong>2 complete projects</strong> outside academic curriculum with zero frameworks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-label">06 / Contact</div>
+    <div class="contact-inner">
+      <h2 class="section-title scroll-reveal">Let's <em>Connect</em></h2>
+      <p class="contact-sub scroll-reveal">I'm actively seeking opportunities in UI/UX Design & Frontend Development.</p>
+      <div class="contact-cards scroll-reveal">
+        <a href="mailto:niharikagurugubelli86@gmail.com" class="contact-card">
+          <span class="contact-card-icon">✉️</span>
+          <span class="contact-card-label">Email</span>
+          <span class="contact-card-value">niharikagurugubelli86@gmail.com</span>
+        </a>
+        <a href="tel:+919392439536" class="contact-card">
+          <span class="contact-card-icon">📱</span>
+          <span class="contact-card-label">Phone</span>
+          <span class="contact-card-value">+91 93924 39536</span>
+        </a>
+        <div class="contact-card">
+          <span class="contact-card-icon">📍</span>
+          <span class="contact-card-label">Location</span>
+          <span class="contact-card-value">Srikakulam, Andhra Pradesh</span>
+        </div>
+      </div>
+      <a href="mailto:niharikagurugubelli86@gmail.com" class="btn-primary large scroll-reveal">Say Hello 👋</a>
+    </div>
+    <div class="contact-orb"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Designed & Built by <span class="footer-name">Niharika Gurugubelli</span></p>
+    <p class="footer-sub">© 2025 · BCA Final Year · Srikakulam, AP</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
